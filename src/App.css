@@ -51,3 +51,54 @@ img.mic{
   border-radius: 20px;
   cursor: pointer;
 }
+
+/* Header Component Styling */
+.header {
+  display: flex;
+  justify-content: right;
+  margin-top: 8px;
+  align-items: center;
+}
+.gmail{
+  margin-right: 2rem;
+  font-size: small;
+}
+.images{
+  margin-right: 2rem;
+  font-size: small;
+}
+.apps{
+  margin-right: 2rem;
+  font-size: small;
+}
+.account{
+  margin-right: 2rem;
+  border: 1px solid rgb(40, 175, 40);
+  background-color: rgb(40, 175, 40);
+  color: white;
+  font-weight: 500;
+  border-radius: 3rem;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: medium;
+}
+/* .menu:hover{
+  
+} */
+.gmail:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.images:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.apps:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.account:hover{
+  cursor: pointer;
+}
