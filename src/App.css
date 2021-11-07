@@ -8,7 +8,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 50%;
+  width: 60%;
   margin: auto;
   display: flex;
   flex-flow: column nowrap;
@@ -22,7 +22,7 @@
 }
 .search{
   width: 100%;
-  padding: 0.4em 0.6em;
+  padding: 0.2em 0.6em;
   border-radius: 25px;
   border: 1px solid #887272;
   display: flex;
@@ -39,7 +39,8 @@ img.mic{
   cursor: pointer;
 }
 .btns{
-  width: 50%;
+  width: 60%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -50,6 +51,27 @@ img.mic{
   border: none;
   border-radius: 20px;
   cursor: pointer;
+}
+/* Responsiveness */
+@media (max-width: 760px) {
+  .btns{
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .btns{
+    width: 90%;
+  }
+}
+@media (max-width: 520px) {
+  .btns{
+    width: 80%;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .btn{
+    margin: 0.4em 0;
+  }
 }
 
 /* Header Component Styling */
