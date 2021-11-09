@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import logo from '../sidehustle-logo.png'
 import mic from '../mic.svg'
+import Button from './Button'
+import Search from './Search'
 
 function MainContent() {
     // State: initial value of the state is an empty string
@@ -14,12 +16,16 @@ function MainContent() {
 
     return (
         <div className="main">
+
             {/* conditional rendering: logo displays whenever the input is empty else the inputed text shows up */}
             { text? <h1>{text}</h1>: <img src={logo} alt="logo" className="logo" /> }
-            <div className="search"><input type="text" value={text} onChange={textHandler} /> <img src={mic} alt="speech" className="mic" /></div>
+
+            {/* Search Component */}
+            <Search mic={mic} text={text} textHandler={textHandler} />
+            
             <div className="btns">
-                <button className="btn">google search</button>
-                <button className="btn">i'm feeling lucky</button>
+                <Button text='google search' />
+                <Button text="I'm feeling lucky" />
             </div>
         </div>
     )
